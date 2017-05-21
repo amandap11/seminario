@@ -10,7 +10,7 @@ body {
     left: 5%;
 }
 
-#localizacao {
+.seminario {
   margin: 0;
   position: fixed;
   bottom: 20px;
