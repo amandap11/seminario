@@ -4,60 +4,12 @@
   <title>Unicórnios são de Verdade</title>
   <link rel="stylesheet" href="estilo.css">
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-
-  <script>
-    window.onload = function () {
-      function updateBatteryStatus(battery) {
-        document.querySelector('#charging').textContent = battery.charging ? 'charging' : 'not charging';
-        document.querySelector('#level').textContent = battery.level;
-        document.querySelector('#dischargingTime').textContent = battery.dischargingTime / 60;
-      }
-
-      navigator.getBattery().then(function(battery) {
-        // Update the battery status initially when the promise resolves ...
-        updateBatteryStatus(battery);
-
-        // .. and for any subsequent updates.
-        battery.onchargingchange = function () {
-          updateBatteryStatus(battery);
-        };
-
-        battery.onlevelchange = function () {
-          updateBatteryStatus(battery);
-        };
-
-        battery.ondischargingtimechange = function () {
-          updateBatteryStatus(battery);
-        };
-      });
-
-
-      var now = new Date().getTime();
-      var page_load_time = now - performance.timing.navigationStart;
-      alert("Tempo de carregamento percebido pelo usuário: " + page_load_time);
-      
-    };
-  </script>
-
 </head>
 <body>
   <div id="cabecalho">
     <h1>Unicórnios são de Verdade</h1>
     <h2>desvendando o mito...</h2>
   </div>
-
-
-
-
-  <div id="charging">(charging state unknown)</div>
-  <div id="level">(battery level unknown)</div>
-  <div id="dischargingTime">(discharging time unknown)</div>
-
-  <p><button onclick="geoFindMe()">Show my location</button></p>
-  <div id="out"></div>
-
-
-
 
   <div id="verdade">
     <img src="images/unicorn.jpg">
@@ -129,11 +81,11 @@
     <p class="deslocado">
     	There was green alligators and long-necked geese
       <br>
-    	Some humpty backed camels and some chimpanzees
+      Some humpty backed camels and some chimpanzees
       <br>
-    	Some cats and rats and elephants, but sure as you're born
+      Some cats and rats and elephants, but sure as you're born
       <br>
-    	The loveliest of all was the unicorn
+      The loveliest of all was the unicorn
     </p>
     <p>
       The Lord seen some sinning and it gave Him pain
@@ -149,11 +101,11 @@
     <p class="deslocado">
     	Green alligators and long-necked geese
       <br>
-    	Some humpty backed camels and some chimpanzees
+      Some humpty backed camels and some chimpanzees
       <br>
-    	Some cats and rats and elephants, but sure as you're born
+      Some cats and rats and elephants, but sure as you're born
       <br>
-    	Don't you forget My unicorns
+      Don't you forget My unicorns
     </p>
     <p>
       Old Noah was there to answer the call
@@ -169,11 +121,11 @@
     <p class="deslocado">
     	I've got green alligators and long-necked geese
       <br>
-    	Some humpty backed camels and some chimpanzees
+      Some humpty backed camels and some chimpanzees
       <br>
-    	Some cats and rats and elephants, but Lord, I'm so forlorn
+      Some cats and rats and elephants, but Lord, I'm so forlorn
       <br>
-    	I just can't find no unicorns"
+      I just can't find no unicorns"
     </p>
     <p>
       And Noah looked out through the driving rain
@@ -187,11 +139,11 @@
     <p class="deslocado">
     	There was green alligators and long-necked geese
       <br>
-    	Some humpty backed camels and some chimpanzees
+      Some humpty backed camels and some chimpanzees
       <br>
-    	Noah cried, "Close the door because the rain is falling
+      Noah cried, "Close the door because the rain is falling
       <br>
-    	And we just can't wait for no unicorns"
+      And we just can't wait for no unicorns"
     </p>
     <p>
       The ark started moving, it drifted with the tide
@@ -205,11 +157,11 @@
     <p class="deslocado">
     	You'll see green alligators and long-necked geese
       <br>
-    	Some humpty backed camels and some chimpanzees
+      Some humpty backed camels and some chimpanzees
       <br>
-    	Some cats and rats and elephants, but sure as you're born
+      Some cats and rats and elephants, but sure as you're born
       <br>
-    	You're never gonna see no unicorns
+      You're never gonna see no unicorns
     </p>
     <div class="destacado">
       <p>
@@ -224,11 +176,11 @@
       <p class="deslocado">
       	You'll see green alligators and long-necked geese
         <br>
-      	Some humpty backed camels and some chimpanzees
+        Some humpty backed camels and some chimpanzees
         <br>
-      	But if you're looking for the unicorns, don't be forlorn,
+        But if you're looking for the unicorns, don't be forlorn,
         <br>
-      	The second star to the right and straight on until morning.
+        The second star to the right and straight on until morning.
       </p>
     </div>
   </div>
