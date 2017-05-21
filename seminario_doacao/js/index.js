@@ -2,7 +2,7 @@
 var localizacao = document.getElementById("localizacao");
 
 if (!navigator.geolocation){
-	localizacao.innerHTML = "<p>Seu browser não suporta Geolocalização.</p>";
+	localizacao.innerHTML = "<p>Seu navegador não suporta Geolocalização.</p>";
 }
 
 function success(position) {
@@ -47,19 +47,18 @@ function updateBatteryStatus(battery) {
 }
 
 navigator.getBattery().then(function(battery) {
-    // Update the battery status initially when the promise resolves ...
+    
     updateBatteryStatus(battery);
 
-    // .. and for any subsequent updates.
+    //evento disparado quando o carregamento é alterado 
+    //(se é conectado à tomada ou se é desconectado)
     battery.onchargingchange = function () {
     	updateBatteryStatus(battery);
     };
 
+    //evento disparado quando o nível de bateria é alterado
     battery.onlevelchange = function () {
     	updateBatteryStatus(battery);
     };
 
-    battery.ondischargingtimechange = function () {
-    	updateBatteryStatus(battery);
-    };
 });
