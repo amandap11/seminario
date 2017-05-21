@@ -24,6 +24,7 @@ localizacao.innerHTML = "<p>Buscando localização...</p>";
 navigator.geolocation.getCurrentPosition(success, error);
 
 
+
 //NAVIGATION TIMING API
 //tempo de carregamento da página
 var horaAtual = new Date().getTime();
@@ -34,6 +35,8 @@ var tempoDeConexao = performance.timing.responseEnd - performance.timing.request
 
 console.log("Tempo de carregamento da página: " + tempoDeCarregamento + "ms");
 console.log("Tempo de conexão: " + tempoDeConexao + "ms");
+
+
 
 //BATTERY STATUS
 function updateBatteryStatus(battery) {
